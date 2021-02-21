@@ -1,0 +1,20 @@
+{
+  "name": "nodecourserepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set UV_THREADPOOL_SIZE = 5 & node threads.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cptaylor38/nodecourserepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cptaylor38/nodecourserepo/issues"
+  },
+  "homepage": "https://github.com/cptaylor38/nodecourserepo#readme"
+}
