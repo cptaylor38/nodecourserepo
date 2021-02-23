@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cptaylor38/nodecourserepo/issues"
   },
-  "homepage": "https://github.com/cptaylor38/nodecourserepo#readme"
+  "homepage": "https://github.com/cptaylor38/nodecourserepo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
