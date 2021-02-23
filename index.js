@@ -26,17 +26,28 @@ function doWork(duration){
 app.get('/', (req, res)=> {
     doWork(5000);
     //This gets executed during the event loop.
-    res.send('hello');
+    res.send('worker id: ' + cluster.worker.id);
 })
 
-app.get('/fast', (req, res)=> {
+app.get('/1', (req, res)=> {
     //not working on Windows - looking for alternative.
-    res.send('fast');
+    res.send('worker id: ' + cluster.worker.id);
 })
 
-app.get('/fast2', (req, res)=> {
-    res.send('fast2');
+app.get('/2', (req, res)=> {
+    res.send('worker id: ' + cluster.worker.id);
 })
+
+app.get('/3', (req, res)=> {
+    res.send('worker id: ' + cluster.worker.id);
+})
+app.get('/4', (req, res)=> {
+    res.send('worker id: ' + cluster.worker.id);
+})
+
+//Testing to see how many I needed on windows to show different workers. Seemed to work 
+//          at * + 4 additional.
+
 
 app.listen(3000);
 }
